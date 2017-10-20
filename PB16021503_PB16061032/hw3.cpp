@@ -281,7 +281,7 @@ int ustc_ConnectedComponentLabeling(Mat grayImg, Mat& lablelImg, int bin_th){
 	}
 	Mat part_of_labelImg = ex_labelImg(Rect(1, 1, width, height));
 	part_of_labelImg.copyTo(labelImg);
-
+        delete[] T;
 
 	return MY_OK;
 }
